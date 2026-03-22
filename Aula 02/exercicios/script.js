@@ -77,3 +77,59 @@ function verificar_primo(){
         }
     }
 }
+
+const soma = () => {
+    let a = Number(prompt('Digite o primeiro valor'))
+    let b = Number(prompt('Digite o segundo valor'))
+    return alert('A soma dos valores é: '+ (a + b))
+}
+
+
+function printarDados(nome, idade){
+    if (nome === undefined){
+        alert(`Sua idaded é ${idade}`)
+    }else if (idade === undefined){
+        alert(`Seu nome é ${nome}`)
+    }else {
+        alert(`Seu nome é ${nome} e sua idade é ${idade}`)
+    }
+}
+
+function multiplicacao(a, b = 2){
+    if (b == 2){
+        return alert(`O dobro de ${a} é ` + (a * b))
+    }else {
+        return alert(`A multiplicação dos números ${a} e ${b} é ` + (a * b))
+    }
+}
+
+function verificarPalindromo(palavra){
+    let resposta = palavra.toLowerCase().replaceAll(' ', '')
+    let original = palavra.replaceAll(' ', '')
+    if (resposta.split('').reverse().join('') !== resposta){
+        alert(`${original} não é um palíndromo`)
+    }else {
+        alert(`${original} é um palíndromo`)
+    }
+}
+
+function receberNumeros(quant){
+    let numeros = []
+
+    for (let i = 1 ; i <= quant; i++){
+        let valor = prompt(`Digite o ${i} número: `)
+        numeros.push(Number((valor)))
+    }
+
+    return numeros
+}
+
+function calculateAverage(numeros){
+    let soma = 0
+
+    for (let i = 0; i < numeros.length; i++){
+        soma += numeros[i]
+    }
+
+    return alert('A média dos números é: ' + (soma / numeros.length))
+}

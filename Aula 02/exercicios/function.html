@@ -1,0 +1,23 @@
+<h2>Functions</h2>
+
+<script src="script.js"></script>
+
+
+<p>Function sem usar todos parametros</p>
+<button onclick="printarDados(prompt('Digite seu nome: '))">Passar apenas nome</button>
+
+<p>Function usando todos parametros</p>
+<button onclick="printarDados(prompt('Digite seu nome: '), prompt('Digite sua idade: '))">Passar nome e idade</button>
+
+<p>Function com parametro default</p>
+<button onclick="multiplicacao(prompt('Digite o número: '))">Passando apenas 1 número</button>
+
+<p>Function padrão</p>
+<button onclick="multiplicacao(prompt('Digite primeiro número: '), prompt('Digite o segundo número: '))">Passando 2 números</button>
+
+<p>Palíndromo</p>
+<button onclick="verificarPalindromo(prompt('Digite a palavra que gostaria de verificar: '))">Verificar</button>
+
+<p>Usando array como argumento numa function</p>
+<button onclick="calculateAverage(receberNumeros(Number(prompt('Digite quantos números quer analisar: '))))">Dizer números</button><br><br>
+<a href="http://localhost:8080/">Voltar</a>
