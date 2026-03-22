@@ -54,3 +54,26 @@ function escolha(){
             break;
     }
 }
+
+function verificar_primo(){
+    
+    let numero = Number(prompt('Digite o número que gostaria de verificar: '))
+  
+    if (numero <= 1){
+        alert('Número tem que ser maior que 1')
+    }else {
+        let verifica = true
+        for (let i = 2; i < numero; i++){
+            if (numero % i == 0){
+                verifica = false
+                break
+            }
+        }
+
+        if (verifica) {
+            alert(`O número ${numero} é um número primo`)
+        }else{
+             alert(`O número ${numero} não é um número primo`)
+        }
+    }
+}
