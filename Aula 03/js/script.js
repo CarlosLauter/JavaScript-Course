@@ -114,3 +114,70 @@ function indexof(){
     alert('Posição do primeiro 1 no array: ' + numeros.indexOf(1))
     alert('Posição do 1 mais perto do fim no array: ' + numeros.lastIndexOf(1))
 }
+
+function num () {
+    let nums = [0,1,2,3,4,5,6,7,8,9]
+
+    alert(nums.slice(4,5))
+    alert(nums.slice(0,4))
+}
+
+function foreach() {
+    let nomes = ['Carlos', 'Pedro', 'josé', 'limão']
+
+    nomes.forEach(nome => {
+        alert('O nome é: ' + nome)
+    })
+}
+
+function inc() {
+    let peixes = ['tubarão', 'peixe-lua', 'tucunaré']
+    alert(peixes.includes('tubarão'))
+}
+
+function reverse(){
+    let peixes = ['tubarão', 'peixe-lua', 'tucunaré']
+    alert(peixes.reverse())
+}
+
+function padstart(){
+    let milAoContrario = '1'
+    alert(milAoContrario.padStart(4, '0'))
+}
+
+function split() {
+    let frase = 'Quem com ferro fere com ferro será ferido'
+    let palavras = frase.split(' ')
+    alert(palavras)
+}
+
+function join() {
+    let frase = 'Quem com ferro fere com ferro será ferido'
+    let palavras = frase.split(' ')
+    let novaFrase = palavras.join('<->')
+    alert(novaFrase)
+    alert(palavras.join(' '))
+}
+
+function repeat() {
+    let palavra = 'opa '
+    alert(palavra.repeat(20))
+}
+
+function rest() {
+    let num = '1'
+    let num1 = '5'
+    let num2 = '23'
+    let num3 = '18'
+
+    function imprimir(...args) {
+        for(let i = 0; i < args.length; i++){
+            alert(args[i])
+        }
+    }
+
+    alert(imprimir(num, num1))
+    alert(imprimir(num2, num3))
+    alert(imprimir(num, num1, num2, num3))
+    alert(imprimir('4', '5' ,'6' ,'7' ,'8'))
+}
