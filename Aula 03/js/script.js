@@ -181,3 +181,51 @@ function rest() {
     alert(imprimir(num, num1, num2, num3))
     alert(imprimir('4', '5' ,'6' ,'7' ,'8'))
 }
+
+function desObj() {
+    
+    let obj = {
+        rodas: 4,
+        portas: 4,
+        tetosolar: true,
+        motor: '2.0'
+    }
+
+    const {rodas: vRodas, portas: vPortas, tetosolar: vTetoSolar, motor: vMotor} = obj
+
+    alert(vMotor)
+    alert(vTetoSolar)
+
+    let nomes = ['Matheus', 'João', 'Pedro']
+
+    let [nomeA, nomeB, nomeC] = nomes
+
+    alert(nomeA)
+    alert(nomeB)
+    alert(nomeC)
+}
+
+
+function json() {
+    
+    let pessoa = {
+        "nome": "Carlos",
+        "idade": 23,
+        "position": "Developer",
+        "hobbies": ["Games", "Calisthenics", "Series"]
+    }
+
+    alert(pessoa.nome)
+    alert(pessoa.idade)
+
+    let pessoaTexto = JSON.stringify(pessoa)
+
+    alert(pessoaTexto)
+
+    let pessoaJSON = JSON.parse(pessoaTexto)
+
+    alert(pessoaJSON)
+    alert(pessoaJSON.hobbies[0])
+
+    
+}
